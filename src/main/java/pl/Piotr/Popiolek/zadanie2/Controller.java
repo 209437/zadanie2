@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     /**
-     * Method get some string and return count upper letters, lower letters, numbers and special characters in response
+     * Method get some string and return this string, number of: upper letters, lower letters, numbers and special characters in response
      *
      * @param someString
      * @return Details class with informations about string in json
