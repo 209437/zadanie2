@@ -15,7 +15,12 @@ public class Controller {
      */
     @RequestMapping("/getDetails/{someString}")
     public Details getDetailsAboutString(@PathVariable String someString) {
-        return null;
+        Details response = new Details(someString);
+        response.setNumberOfLowerLetters(someString.chars().filter(Character::isLowerCase).count());
+        response.setNumberOfUpperLetters(someString.chars().filter(Character::isUpperCase).count());
+        response.setNumberOfNumbers(someString.chars().filter(Character::isDigit).count());
+        response.setNumberOfSpecialCharacters(someString.length()-response.getNumberOfLowerLetters()-response.getNumberOfNumbers()-response.getNumberOfUpperLetters());
+        return response;
     }
 
 }
