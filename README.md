@@ -8,3 +8,4 @@
 #"numberOfLowerLetters" - number of Lower Letters
 #"numberOfNumbers" - number of Number characters
 #"numberOfSpecialCharacters" - number of special characters
+
